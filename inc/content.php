@@ -5,6 +5,9 @@
           <div id="corner">
             <?php while(have_posts()):the_post()?>
             <h2><a href="<?php the_permalink()?>"><?php the_title()?></a></h2>
+            <!-- <h5><?php //echo get_post_meta(get_the_ID(),'subtitle',true)?></h5> -->
+            <h5><?php //echo get_post_meta(get_the_ID(),'our_subtitle',true)?></h5>
+            <h5><?php //echo get_post_meta(get_the_ID(),'amar_subtitle',true)?></h5>
             <div class="f-left article-img"><?php the_post_thumbnail('simple_event_post_thumbnails_size');?>
              
             </div>
